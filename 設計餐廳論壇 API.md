@@ -4,16 +4,18 @@
 
 ### 和 User 有關的路由
 
-| Description                            | Method | Path                     | Parameter | Query |
-| -------------------------------------- | ------ | ------------------------ | --------- | ----- |
-| 使用者註冊                             | POS    | /api/users/sing-in       | ---       | ---   |
-| 使用者登入                             | POST   | /api/users/login         | ---       | ---   |
-| 使用者個人資料                         | GET    | /api/users/:id           | id        | ---   |
-| 修改使用者資料                         | PUT    | /api/users/:id           | id        | ---   |
-| 使用者收藏餐廳                         | GET    | /api/users/:id/favorites | id        | ---   |
-| 使用者評論過的餐廳                     | GET    | /api/users/:id/comments  | id        | ---   |
-| 使用者自己追蹤的使用者                 | GET    | /api/users/:id/followers | id        | ---   |
-| 使用者自己追蹤的使用者正在追蹤的使用者 | GET    | /api/users/:id/followers | id        | ---   |
+| Description                            | Method | Path                               | Parameter | Query |
+| -------------------------------------- | ------ | ---------------------------------- | --------- | ----- |
+| 使用者註冊                             | POS    | /api/users/sing-in                 | ---       | ---   |
+| 使用者登入                             | POST   | /api/users/login                   | ---       | ---   |
+| 使用者個人資料                         | GET    | /api/users/:id                     | id        | ---   |
+| 修改使用者資料                         | PUT    | /api/users/:id                     | id        | ---   |
+| 使用者收藏餐廳                         | GET    | /api/users/:id/favorites           | id        | ---   |
+| 使用者評論過的餐廳                     | GET    | /api/users/:id/comments            | id        | ---   |
+| 使用者自己追蹤的使用者                 | GET    | /api/users/:id/followers           | id        | ---   |
+| 使用者自己追蹤的使用者正在追蹤的使用者 | GET    | /api/users/:id/followers-followers | id        | ---   |
+
+PS. *使用者自己追蹤的使用者* API 所帶入的 Parameter 為使用者登入的 id ，*使用者自己追蹤的使用者正在追蹤的使用者* API 所帶入的 Parameter 為被追蹤者的 id
 
 ### 和 Follower 有關的路由
 
